@@ -1,0 +1,14 @@
+orker.list=loadbalancer,status
+worker.loadbalancer.type=lb
+worker.loadbalancer.balance_workers=codech-worker-1,codech-worker-2
+worker.loadbalancer.method=Session
+
+worker.status.type=status
+
+worker.codech-worker-1.type=ajp13
+worker.codech-worker-1.host=codech-cluster-node-1
+worker.codech-worker-1.port=8009
+
+worker.codech-worker-2.type=ajp13
+worker.codech-worker-2.host=codech-cluster-node-2
+worker.codech-worker-2.port=8009
